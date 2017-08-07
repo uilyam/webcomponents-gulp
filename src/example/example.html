@@ -1,0 +1,17 @@
+<template id="example-element-template">
+    <link rel="stylesheet" href="/src/example/example.css">
+    <div>
+        <p class="example-text">Example: Before Connected Callback.</p>
+        <div class="named-text">
+            <slot name="named-example"></slot>
+        </div>
+        <div class="default-text">
+            <slot name="default-example">Oops, user didn't provide markup.</slot>
+        </div>
+        <div class="default-slot-text">
+            <slot>I am the default slot</slot>
+        </div>
+    </div>
+
+</template>
+<script type="text/javascript" src="/src/example/example.js"></script>

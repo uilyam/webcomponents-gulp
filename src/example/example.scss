@@ -1,0 +1,23 @@
+@import '../../sass/variables';
+.named-text,
+.example-text,
+.default-slot-text,
+.default-text {
+    font-size: $font-size;
+}
+
+.example-text {
+    color: $primary-color;
+}
+
+.named-text ::slotted(*) {
+  color: blue; }
+
+.default-text,
+.default-text ::slotted(*) {
+  color: green;
+ }
+
+.default-slot-text ::slotted(*) {
+    color: yellow;
+}

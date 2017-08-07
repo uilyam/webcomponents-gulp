@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <!--Fonts-->
+        <link defer href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!--Stylesheets-->
+        
+        <!--Import the example component-->
+        <link rel="import" href="/src/example/example.html">
+    </head>
+    <body>
+        <!--The example component-->
+        <example-element>
+            <p slot="named-example">My named content should be blue.</div>
+            <!--<p slot="default-example">Yay, user provided content and it is green.</div>-->
+            <p>My default content is yellow.</div>
+        </example-element>
+
+        <!--Web components polyfill -->
+        <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-lite.js"></script>
+        <!--Any webcomponent JS setup should be done after WebComponentsReady fires-->
+        <script>
+            window.addEventListener('WebComponentsReady', function(e) {});
+        </script>
+    </body>
+</html>
