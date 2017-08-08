@@ -37,7 +37,7 @@ const jsFunc = function() {
 }
 
 const jsWatchFunc = function() {
-    gulp.watch('./src/**/*.js', ['js']);
+    gulp.watch(['./src/**/*.js', '!./src/**/*.js'], ['js']);
 }
 
 const browserSyncFunc = function() {
